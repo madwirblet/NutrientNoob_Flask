@@ -249,6 +249,13 @@ h1 {
     margin: 10px 0px 10px;
 }
 
+h2 {
+    display: inline-block;
+    color: #A9BD89;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
 h3 {
     color: #C9D5B5;
     font-size: 20px;
@@ -280,6 +287,136 @@ h4 {
     background-color: #A9BD89;
 }
 
+#findMyButton button{
+    background-color: #C9D5B5;
+    color: white;
+    border: none;
+    outline: none;
+    padding: 4px 8px;
+    margin-left: 10px; 
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    font-style: bold;
+    vertical-align: middle; 
+}
+
+#findMyButton button:hover{
+    background-color: #A9BD89;
+}
+
+.homeTitles {
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    margin-bottom: 10px;
+}
+
 .mission {
-    background-image: url('homeBackground.png');
+    background-image: url('images/homeBackground.png');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    padding: 20px; 
+}
+
+.nutrientSelect{
+    display: inline;
+
+}
+
+.nutrientSelect select{
+    flex: 1; 
+    margin-right: 10px; 
+}
+
+.nutrientSelect label{
+    color: #A9BD89;
+    font-style: bold;
+}
+
+.ingredientsSelect label{
+    color: #A9BD89;
+    font-style: bold;
+}
+
+.body {
+    margin: 0em;
+}
+
+.page {
+   width: 100vw;
+   height: 100vh;
+   position: fixed;
+   top: 0;
+   left: -100vw;
+   overflow-y: auto;
+   z-index: 0;
+   background-color: #F6F4F4;
+}
+
+ .page:target {
+   left: 0vw;
+   z-index: 1;
+}
+
+#nutrientClick {
+    background-color: #C9D5B5;
+    color: #F4F4F4;
+    margin-top: 25px;
+    display: inline-block; 
+    padding: 10px 0;
+
+}
+
+#nutrientClick li {
+    text-align: center;
+    background-color: #C9D5B5;
+    color: #F4F4F4;
+    padding: 10px;
+    list-style: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#nutrientClick a{
+    font-style: bold;
+    color: #F4F4F4;
+    font-size: large;
+}
+
+#ingredientsClick {
+    background-color: #C9D5B5;
+    color: #F4F4F4;
+    margin-top: 25px;
+    display: inline-block; 
+    padding: 10px 0;
+
+}
+
+#ingredientsClick li {
+    text-align: center;
+    background-color: #C9D5B5;
+    color: #F4F4F4;
+    padding: 10px;
+    list-style: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#ingredientsClick a{
+    font-style: bold;
+    color: #F4F4F4;
+    font-size: large;
+}
+
+.landing{
+    text-align: center;
+}
+
+section {
+    display: none; 
+}
+.section.active {
+    display: block; 
 }
