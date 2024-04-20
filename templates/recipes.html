@@ -54,7 +54,7 @@
         </ul>
         <p> </p>
         <ul id="ingredientsClick">
-            <li>Click <a href="#ingredients" onclick="toggleSection('ingredients')"here</a> to search recipes based on ingredients</li>
+            <li>Click <a href="#ingredients" onclick="toggleSection('ingredients')">here</a> to search recipes based on ingredients</li>
         </ul>
     </section>
 
@@ -62,37 +62,6 @@
     <!--search recipes by NUTRIENTS-->
 
     <section id="nutrients" class="section">
-        <header>
-            <div class="header">
-    
-                <!--LOGO HERE-->
-                <div class="logo">
-                    <img src="{{ url_for('static', filename='Nutrient Noob Logo.png') }}">
-                </div>
-    
-                <!--NAVIGATION BAR HERE-->
-                <div class="nav">
-                    <ul>
-                        <li><a href="{{ url_for('account') }}">Account</a></li>
-                        <li><a href="{{ url_for('nutrition') }}">Nutrition</a></li>
-                        <li><a class="active" href="{{ url_for('recipes') }}">Recipes</a></li>
-                        <li><a href="{{ url_for('index') }}">Home</a></li>
-                        <!--<input type="text" placeholder="Search..">-->
-                        <li><input type="search" placeholder="Search..."></li>
-                    </ul>
-                </div>
-    
-                <div id="user-buttons">
-                    <a href="{{ url_for('login') }}">
-                        <button id="login">Log In</button>
-                    </a>
-                    <a href="{{ url_for('signup') }}">
-                        <button id="signup">Sign Up</button>
-                    </a>
-                </div>
-            </div>
-    
-        </header>
 
         <div class="nutrientSelect">
 
@@ -271,37 +240,7 @@
 
  <!--this page searches recipes by INGREDIENTS--> 
     <section id="ingredients" class="section">
-        <header>
-            <div class="header">
-    
-                <!--LOGO HERE-->
-                <div class="logo">
-                    <img src="{{ url_for('static', filename='Nutrient Noob Logo.png') }}">
-                </div>
-    
-                <!--NAVIGATION BAR HERE-->
-                <div class="nav">
-                    <ul>
-                        <li><a href="{{ url_for('account') }}">Account</a></li>
-                        <li><a href="{{ url_for('nutrition') }}">Nutrition</a></li>
-                        <li><a class="active" href="{{ url_for('recipes') }}">Recipes</a></li>
-                        <li><a href="{{ url_for('index') }}">Home</a></li>
-                        <!--<input type="text" placeholder="Search..">-->
-                        <li><input type="search" placeholder="Search..."></li>
-                    </ul>
-                </div>
-    
-                <div id="user-buttons">
-                    <a href="{{ url_for('login') }}">
-                        <button id="login">Log In</button>
-                    </a>
-                    <a href="{{ url_for('signup') }}">
-                        <button id="signup">Sign Up</button>
-                    </a>
-                </div>
-            </div>
-    
-        </header>
+       
         
         <!--IDK how you want to collect the responses I just put in a form placeholder for now-->
         <h2>What will you make? Select your ingredients: <form action="/action_page.php"><input type="search" placeholder="separate with commas"></form></h2>
